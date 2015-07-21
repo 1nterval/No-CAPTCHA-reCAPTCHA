@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: No CAPTCHA reCAPTCHA\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/support/plugin/No-CAPTCHA-"
 "reCAPTCHA\n"
-"POT-Creation-Date: 2015-07-21 14:56:29+00:00\n"
-"PO-Revision-Date: 2015-07-23 11:11+0100\n"
+"POT-Creation-Date: 2015-07-23 13:18:06+00:00\n"
+"PO-Revision-Date: 2015-07-23 15:20+0100\n"
 "Last-Translator: Fabien Quatravaux <fabien.quatravaux@1nterval.com>\n"
 "Language-Team: Fabien Quatravaux <fabien.quatravaux@1nterval.com>\n"
 "Language: fr_FR\n"
@@ -20,17 +20,17 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: base-class.php:123
+#: base-class.php:38 base-class.php:141
 msgid "<strong>ERROR</strong>: Please retry CAPTCHA"
 msgstr "<strong>ERREUR</strong>: Merci de réessayer le CAPTCHA"
 
 #. #-#-#-#-#  No-CAPTCHA-reCAPTCHA.pot (No CAPTCHA reCAPTCHA 1.0.2)  #-#-#-#-#
 #. Plugin Name of the plugin/theme
-#: settings.php:52
+#: settings.php:58
 msgid "No CAPTCHA reCAPTCHA"
 msgstr "No CAPTCHA reCAPTCHA"
 
-#: settings.php:54
+#: settings.php:60
 msgid ""
 "Protect WordPress login, registration and comment form with the new No "
 "CAPTCHA reCAPTCHA"
@@ -38,120 +38,124 @@ msgstr ""
 "Protège les formulaires de connexion, d'inscription et de commentaire avec "
 "la nouvelle méthode No CAPTCHA reCAPTCHA"
 
-#: settings.php:58
+#: settings.php:64
 msgid "Settings saved"
 msgstr "Paramètres enregistrés"
 
-#: settings.php:74 settings.php:126
+#: settings.php:80 settings.php:134
 msgid "Click to toggle"
 msgstr "Cliquer pour inverser"
 
-#: settings.php:75
+#: settings.php:81
 msgid "reCAPTCHA Keys"
 msgstr "Clés reCAPTCHA"
 
-#: settings.php:81
+#: settings.php:87
 msgid "Site key"
 msgstr "Clé du site"
 
-#: settings.php:89
+#: settings.php:95
 msgid "Used for displaying the CAPTCHA."
 msgstr "Utilisé pour afficher le CAPTCHA."
 
-#: settings.php:92 settings.php:110
+#: settings.php:99 settings.php:118
 msgid "Grab it <a href=\"%s\" target=\"_blank\">Here</a>"
 msgstr "Obtenez-la <a href=\"%s\" target=\"_blank\">ici</a>"
 
-#: settings.php:99
+#: settings.php:106
 msgid "Secret key"
 msgstr "Clé secrète"
 
-#: settings.php:107
+#: settings.php:114
 msgid "Used for communication between your site and Google."
 msgstr "Utilisé pour la communication entre votre site et Google."
 
-#: settings.php:119 settings.php:173 settings.php:263
+#: settings.php:127 settings.php:188 settings.php:278
 msgid "Save All Changes"
 msgstr "Sauvegarder tous les changements"
 
-#: settings.php:127
+#: settings.php:135
 msgid "Display Settings"
 msgstr "Paramètres d'affichage"
 
-#: settings.php:132
+#: settings.php:140
 msgid "Login Form"
 msgstr "Formulaire de connexion"
 
-#: settings.php:139
+#: settings.php:147
 msgid "Check to enable CAPTCHA in login form"
 msgstr "Cocher pour activer le CAPTCHA sur le formulaire de login"
 
-#: settings.php:146
+#: settings.php:155
+msgid "Show the CAPTCHA only after X login failure"
+msgstr "Afficher le CAPTCHA seulement après X échecs d'authentification"
+
+#: settings.php:161
 msgid "Registration Form"
 msgstr "Formulaire d'inscription"
 
-#: settings.php:153
+#: settings.php:168
 msgid "Check to enable CAPTCHA in WordPress registration form"
 msgstr ""
 "Cocher pour activer le CAPTCHA sur le formulaire d'inscription de WordPress"
 
-#: settings.php:158
+#: settings.php:173
 msgid "Comment Form"
 msgstr "Formulaire de commentaire"
 
-#: settings.php:165
+#: settings.php:180
 msgid "Check to enable CAPTCHA in WordPress comment system"
 msgstr ""
 "Cocher pour activer le CAPTCHA pour le système de commentaire de WordPress"
 
-#: settings.php:182
+#: settings.php:197
 msgid "General Settings"
 msgstr "Paramètres généraux"
 
-#: settings.php:189
+#: settings.php:204
 msgid "Theme"
 msgstr "Thème"
 
-#: settings.php:192
+#: settings.php:207
 msgid "Light"
 msgstr "Clair"
 
-#: settings.php:193
+#: settings.php:208
 msgid "Dark"
 msgstr "Foncé"
 
-#: settings.php:197
+#: settings.php:212
 msgid "The theme colour of the widget."
 msgstr "Le thème de couleur du widget."
 
-#: settings.php:206
+#: settings.php:221
 msgid "Language"
 msgstr "Langage"
 
-#: settings.php:214
+#: settings.php:229
 msgid "Auto Detect"
 msgstr "Détection automatique"
 
-#: settings.php:240
+#: settings.php:255
 msgid "Forces the widget to render in a specific language"
 msgstr "Force le widget à s'afficher dans un langage spécifique"
 
-#: settings.php:248
+#: settings.php:263
 msgid "Error Message"
 msgstr "Message d'erreur"
 
-#: settings.php:255
+#: settings.php:270
 msgid ""
 "Message or text to display when CAPTCHA is ignored or the test is failed."
 msgstr ""
 "Message ou texte à afficher quand le CAPTCHA est ignoré ou quand le test est "
 "raté."
 
-#: settings.php:277
+#: settings.php:292
 msgid "Developer"
 msgstr "Développeur"
 
-#: settings.php:281
+#: settings.php:296
 msgid "Made with lots of love by"
 msgstr "Fait avec amour par"
 
@@ -159,15 +163,15 @@ msgstr "Fait avec amour par"
 #. translators: plugin author name
 #. #-#-#-#-#  No-CAPTCHA-reCAPTCHA.pot (No CAPTCHA reCAPTCHA 1.0.2)  #-#-#-#-#
 #. Author of the plugin/theme
-#: settings.php:283
+#: settings.php:298
 msgid "Agbonghama Collins"
 msgstr ""
 
-#: settings.php:290
+#: settings.php:305
 msgid "Support Plugin"
 msgstr "Soutenir l'extension"
 
-#: settings.php:300
+#: settings.php:315
 msgid ""
 "Is this plugin useful for you? If so, please help support its ongoing "
 "development and improvement with a <a href=\"%s\" target=\"_blank"
@@ -177,18 +181,18 @@ msgstr ""
 "soutenir le développement et les améliorations en cours avec un <a href=\"%s"
 "\" target=\"_blank\">don</a>."
 
-#: settings.php:301
+#: settings.php:316
 msgid "Or, if you are short on funds, there are other ways you can help out:"
 msgstr "Ou, si vous manquez de fonds, il y a d'autre moyens de contribuer :"
 
-#: settings.php:303
+#: settings.php:318
 msgid ""
 "Leave a positive review on the plugin's <a href=\"%s\">WordPress listing</a>"
 msgstr ""
 "Laisser une opinion positive à propos de cette extension sur le site <a href="
 "\"%s\">WordPress</a>"
 
-#: settings.php:304
+#: settings.php:319
 msgid ""
 "Vote \"Works\" on the plugin's <a href=\"%s\" target=\"_blank\">WordPress "
 "listing</a>"
@@ -196,7 +200,7 @@ msgstr ""
 "Votez \"Works\" sur <a href=\"%s\" target=\"_blank\">la page WordPress</a> "
 "de l'extension"
 
-#: settings.php:305
+#: settings.php:320
 msgid "<a href=\"%s\" target=\"_blank\">Share your thoughts on Twitter</a>"
 msgstr "<a href=\"%s\" target=\"_blank\">Partagez vos idées sur Twitter</a>"
 

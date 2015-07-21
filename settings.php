@@ -36,6 +36,7 @@ class Ncr_Settings_Page {
 		$secrete_key = isset( $ncr_options['secrete_key'] ) ? $ncr_options['secrete_key'] : '';
 
 		$captcha_login        = isset( $ncr_options['captcha_login'] ) ? $ncr_options['captcha_login'] : '';
+		$captcha_login_after_n_failures        = isset( $ncr_options['captcha_login_after_n_failures'] ) ? $ncr_options['captcha_login_after_n_failures'] : 0;
 		$captcha_registration = isset( $ncr_options['captcha_registration'] ) ? $ncr_options['captcha_registration'] : '';
 		$captcha_comment      = isset( $ncr_options['captcha_comment'] ) ? $ncr_options['captcha_comment'] : '';
 
@@ -146,6 +147,13 @@ class Ncr_Settings_Page {
 								<?php _e( 'Check to enable CAPTCHA in login form', 'ncr-captcha' ); ?>
 
 							</p>
+						</td>
+						<td>
+							<input id="login_n_failure" type="number"name="ncr_options[captcha_login_after_n_failures]"
+							       value="<?php echo $captcha_login_after_n_failures ?>">
+							<p class="description">
+								<?php _e( 'Show the CAPTCHA only after X login failure', 'ncr-captcha' ); ?>
+							</p> <!--TODO : display current login failures -->
 						</td>
 					</tr>
 					<tr>

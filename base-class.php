@@ -13,6 +13,12 @@ class Ncr_No_Captcha_Recaptcha {
 
 	static private $language;
 
+	static protected $captcha_login;
+
+	static protected $captcha_login_after_n_failures;
+
+	static protected $login_failures;
+
 	static protected $error_message;
 
 	static protected $plugin_options;
@@ -31,6 +37,9 @@ class Ncr_No_Captcha_Recaptcha {
 
 		self::$error_message = isset( self::$plugin_options['error_message'] ) ? self::$plugin_options['error_message'] : wp_kses( __( '<strong>ERROR</strong>: Please retry CAPTCHA', 'ncr-catpcha' ), array(  'strong' => array() ) );
 
+		self::$captcha_login = isset(self::$plugin_options['captcha_login']) ? self::$plugin_options['captcha_login'] : 'no';
+		self::$captcha_login_after_n_failures = isset(self::$plugin_options['captcha_login_after_n_failures']) ? self::$plugin_options['captcha_login_after_n_failures'] : 0;
+		self::$login_failures = isset(self::$plugin_options['login_failures']) ? absint( self::$plugin_options['login_failures'] ) : 0;
 
 
 		add_action( 'plugins_loaded', array( __CLASS__, 'load_plugin_textdomain' ) );
@@ -120,7 +129,15 @@ class Ncr_No_Captcha_Recaptcha {
 		$default_options = array(
 			'captcha_registration' => 'yes',
 			'captcha_comment'      => 'yes',
+			'captcha_login'        => 'no',
+			'captcha_login_after_n_failures' => 0,
+			'login_failures'       => 0,
+
+			'site_key'             => '',
+			'secrete_key'          => '',
+
 			'theme'                => 'light',
+			'language'             => '', //auto-detect
 			'error_message'        => wp_kses( __( '<strong>ERROR</strong>: Please retry CAPTCHA', 'ncr-catpcha' ), array(  'strong' => array() ) ),
 		);
 
